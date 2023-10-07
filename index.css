@@ -1,0 +1,815 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  
+  
+}
+body::-webkit-scrollbar{
+  display: hidden;
+}
+body {
+  min-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #100f3e;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: 0px auto;
+  
+}
+
+header{
+
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: all 0.2s;
+  
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  color: white;
+  background-color: #100f3e;
+  transition: all 0.2s;
+}
+.left {
+  margin-left: 6.5vw;
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+.left > a {
+  text-decoration: none;
+  color: white;
+}
+
+.right {
+  margin-right: 1.5vw;
+}
+
+.right > ul {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right > ul > li {
+  list-style-type: none;
+  margin: 1vw;
+  padding: 0.5vw;
+}
+.reponsive{
+    display: none;
+}
+
+.active{
+  color: aqua;
+}
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.btn {
+  margin-top: 4vh;
+  font-size: 1.7rem;
+  background-color: #af5aff;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.5vw;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.page1-left-btn {
+  border: 1px solid white;
+}
+#page1-left > div {
+  margin-left: 3rem;
+}
+#page1-left > div > h1 > span {
+  color: #af5aff;
+}
+#page1-left {
+  position: relative;
+  height: 80%;
+  width: 45%;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 1.8rem;
+}
+
+#element {
+  color: #af5aff;
+}
+#page1-right {
+  position: relative;
+  height: 80%;
+  width: 45%;
+
+  margin: 2.5%;
+}
+#page1-right > img {
+  position: relative;
+  height: 97%;
+  width: 90%;
+  object-fit: fill;
+}
+
+.right > ul > li > a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.right > ul > li > a:hover {
+  font-size: 1.05rem;
+}
+
+.hr {
+  margin: 0px 6vw;
+}
+#page2 {
+  height: 70vh;
+  width: 100vw;
+  color: white;
+  background-color: #100f3e;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+#page2-upper {
+  text-align: center;
+}
+#page2-upper > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page2-upper > h3 > hr {
+  width: 2rem;
+  height: 0.2rem;
+  color: white;
+  background-color: #932ff0;
+  border: none;
+}
+
+#page2-lower {
+  height: 50vh;
+  width: 50vw;
+  margin: auto;
+  padding: 1rem 2.5rem;
+}
+#page2-lower > h2 > span {
+  color: #af5aff;
+}
+#page2-lower > h2 {
+  color: white;
+
+  align-items: start;
+}
+#page2-lower > h4 {
+  margin-top: 2vh;
+  font-weight: 400;
+}
+
+.btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #932ff0;
+}
+
+#page3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+#page3-upper {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#page3-lower {
+  position: relative;
+  height: 60%;
+  width: 90%;
+  border: 2px solid rgb(160, 160, 160);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  position: relative;
+  margin: 1rem;
+  height: 90%;
+  width: 20%;
+  background-color: #0a0a0a;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-vr > img {
+  height: 50%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+.apple-vr > h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+.apple-vr > h4 {
+  font-size: 0.9vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.apple-vr > div {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.apple-vr > div > a>button {
+  font-size: 1.5vw;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 1vw;
+  border: none;
+  color: white;
+  background-color: #932ff0;
+  cursor: pointer;
+}
+
+/* cantainer2 */
+.todoimg {
+  position: relative;
+
+  border-radius: 1rem;
+  height: 40%;
+  width: 70%;
+  object-fit: fill;
+  margin: auto;
+}
+
+.todo > h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+.todo > h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.todo > div {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.todo > div > a>button{
+  font-size: 1.5vw;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 1vw;
+  border: none;
+  color: white;
+  background-color: #932ff0;
+  cursor: pointer;
+}
+
+/* container3 */
+
+.eduimg {
+  position: relative;
+
+  border-radius: 1rem;
+  height: 40%;
+  width: 85%;
+  object-fit: fill;
+  margin: auto;
+}
+
+.edu > h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.edu > h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.edu > div {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.edu > div > a>button {
+  font-size: 1.5vw;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 1vw;
+  border: none;
+  color: white;
+  background-color: #932ff0;
+  cursor: pointer;
+}
+
+/* container4 */
+
+.tictacimg {
+  position: relative;
+
+  border-radius: 1rem;
+  height: 40%;
+  width: 60%;
+  object-fit: fill;
+  margin: auto;
+}
+
+.tictac > h3 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.tictac > h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.tictac > div {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tictac > div > a>button {
+  font-size: 1.5vw;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 1vw;
+  border: none;
+  color: white;
+  background-color: #932ff0;
+  cursor: pointer;
+}
+
+#page3 > hr {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 1%;
+  height: 1px;
+  width: 85vw;
+  color: #292929;
+}
+
+#page4 {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  background-color: #100f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page4-a {
+  margin-top: 3rem;
+}
+#page4-a > img {
+  height: 100%;
+  width: 90%;
+}
+
+#page4-b {
+  display: none;
+  margin-top: 3rem;
+  position: absolute;
+  color: white;
+  margin-left: 7rem;
+}
+#page4-b > ul > li {
+  font-size: 1.3rem;
+}
+
+#page5 {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+#page5 > h1 {
+  padding-top: 5%;
+  text-align: center;
+}
+#page5 > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page5 > h3 > hr {
+  width: 2rem;
+  height: 0.2rem;
+  color: white;
+  background-color: #932ff0;
+  border: none;
+}
+
+#page5-lower {
+  display: flex;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+#page5-a {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page5-a > div > h3 {
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+}
+#page5-a-inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0.3rem 3rem;
+}
+#detail {
+  display: flex;
+  flex-direction: column;
+}
+#detail > h4 > a {
+  text-decoration: none;
+}
+#page5-b {
+  height: 100%;
+  width: 50%;
+}
+#page5-b-lower {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0px;
+  justify-content: center;
+  width: 50%;
+}
+#page5-b-lower > button {
+  font-size: 1.3rem;
+  width: 70%;
+}
+
+#name {
+  border: 1px solid rgb(165, 165, 165);
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+}
+#email {
+  font-size: 1.5rem;
+  border: 1px solid rgb(165, 165, 165);
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+#message {
+  font-size: 0.8rem;
+  border: 1px solid rgb(165, 165, 165);
+  outline: none;
+  border-radius: 0.3rem;
+}
+.icons {
+  font-size: 2rem;
+  margin: 0px 0.5rem;
+}
+
+
+
+
+/* reponsivness */
+
+
+
+@media screen and (max-width: 800px) {
+  .left > a {
+    font-size: 3vw;
+  }
+  .hr {
+    margin: 2rem 6vw;
+  }
+
+  #page1-left {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+  }
+  #page1-left > div > h3 {
+    font-size: 6vw;
+  }
+
+  #page1-right {
+    height: 100%;
+    width: 100%;
+  }
+
+  #page2 {
+    height: 80vh;
+  }
+  #page2-lower {
+    width: 95vw;
+    margin: 1rem auto;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #page3 {
+    height: 230vh;
+    margin: 0;
+    justify-content: start;
+  }
+  #page3-upper {
+    margin-top: 2rem;
+  }
+  #page3-lower {
+    height: 100%;
+    flex-direction: column;
+  }
+  .container {
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .apple-vr > h3 {
+    font-size: 1rem;
+  }
+
+  .todoimg {
+    height: 35vw;
+  }
+  .todo > h4 {
+    display: none;
+  }
+  .todo > div {
+    flex-direction: column;
+  }
+
+  .todo > div > a>button {
+    font-size: 3.5vw;
+    margin-bottom: 0.2rem;
+  }
+
+  .apple-vr > img {
+    width: 45%;
+  }
+
+  .apple-vr > div {
+    flex-direction: column;
+  }
+
+  .apple-vr > div > a>button {
+    font-size: 3.5vw;
+    margin-bottom: 0.2rem;
+  }
+
+  .apple-vr > h4 {
+    display: none;
+  }
+  .eduimg {
+    width: 55%;
+  }
+  .edu > h4 {
+    display: none;
+  }
+  .edu > h3 {
+    font-size: 4vw;
+  }
+  .edu > div {
+    flex-direction: column;
+  }
+  .edu > div >a> button {
+    font-size: 3.5vw;
+    margin-bottom: 0.2rem;
+  }
+
+  .tictac > h4 {
+    display: none;
+  }
+  .tictacimg {
+    height: 35vw;
+  }
+  .tictac > div {
+    flex-direction: column;
+  }
+  .tictac > div > a>button {
+    font-size: 3.5vw;
+    margin-bottom: 0.2rem;
+  }
+  #page4 {
+    height: 50vh;
+    align-items: start;
+    margin-top: 2rem;
+    padding-left: 2rem
+  }
+  #page4-a {
+    display: none;
+  }
+
+  #page4-b {
+    display: contents;
+    margin-top: 3rem;
+    position: absolute;
+    color: white;
+    
+  }
+
+  #page4-b > ul > li {
+    font-size: 1rem;
+  }
+
+  #page5-lower {
+    flex-direction: column;
+  }
+  #page5-a > div > h3 {
+    display: none;
+  }
+  #page5-a-inner {
+    margin: 0;
+  }
+  #name {
+    margin: 1rem 0px;
+  }
+
+  #page5-b-lower {
+    width: 170%;
+  }
+  #page5 > h1 {
+    text-align: start;
+  }
+
+  #page5 > h3 {
+    justify-content: start;
+  }
+}
+
+
+
+
+/* repossiveness 560 */
+
+
+@media screen and (max-width: 560px) {
+    #page1{
+        height: 55vh;
+    }
+    .left>a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    .right>ul{
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ;
+    }
+    .right{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.1s ;
+    }
+
+    .reponsive{
+        display: contents;
+        
+        
+    }
+    .reponsive>button{
+        margin-top:.4rem ;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        background-color: #932ff0;
+        outline: none;
+        border: none;
+        border-radius: .2rem;
+        
+        padding: 0.1rem;
+    }
+    .reponsive>button>i{
+        
+        color: white;
+        padding: 0.1rem;
+        font-size: 4.4vw;
+    }
+    nav{
+        flex-direction: column;
+        height: 25vh;
+        transition: all 0.3s ;
+    }
+    .left{
+        margin: 0;
+    }
+
+    .left>a{
+        font-size: 1rem;
+    }
+
+    .h-nav{
+        height: 45px;
+        transition: all 0.3s ;
+    }
+    .v-class{
+        opacity: 0;
+        transition: all 0.3s ;
+    }
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+

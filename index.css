@@ -12,12 +12,10 @@ html{
   
   
 }
-body::-webkit-scrollbar{
-  display: hidden;
-}
+
 body {
   min-width: 100vw;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background-color: #100f3e;
   box-sizing: border-box;
@@ -80,7 +78,7 @@ nav {
 #page1 {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,7 +148,7 @@ nav {
 }
 #page2 {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   color: white;
   background-color: #100f3e;
   padding: 5vh;
@@ -206,7 +204,7 @@ nav {
 #page3 {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,7 +412,7 @@ nav {
 #page4 {
   position: relative;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   background-color: #100f3e;
   display: flex;
   flex-direction: column;
@@ -444,7 +442,7 @@ nav {
   position: relative;
   background-color: white;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 #page5 > h1 {
   padding-top: 5%;

@@ -569,7 +569,7 @@ nav {
   }
 
   #page2 {
-    height: 55vh;
+    height: 75vh;
   }
   #page2-lower {
     width: 100%;
@@ -792,8 +792,8 @@ nav {
 
 
     #page2-lower > h2{
-      height: 20%;
-      width: 80%;
+      height: 35%;
+      width: 95%;
     }
 }
 

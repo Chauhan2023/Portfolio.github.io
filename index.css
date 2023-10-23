@@ -1,7 +1,8 @@
-html{
+#html{
   scroll-behavior: smooth;
   scroll-padding: 5rem;
 }
+
 
 
 * {
@@ -516,6 +517,7 @@ nav {
   font-size: 1.5rem;
   border-radius: 0.3rem;
   width: 100%;
+  margin-bottom: .2rem;
 }
 #email {
   font-size: 1.5rem;

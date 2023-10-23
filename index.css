@@ -14,13 +14,12 @@ html{
 }
 
 body {
-  min-width: 100vw;
-  width: 100%;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
   background-color: #100f3e;
-  box-sizing: border-box;
-  object-fit: cover;
-  margin: 0px auto;
+  
+
   
 }
 
@@ -497,13 +496,14 @@ nav {
 #page5-b {
   height: 100%;
   width: 50%;
+  margin-right: 1rem;
 }
 #page5-b-lower {
   display: flex;
   flex-direction: column;
   margin: 1rem 0px;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 #page5-b-lower > button {
   font-size: 1.3rem;
@@ -515,12 +515,14 @@ nav {
   outline: none;
   font-size: 1.5rem;
   border-radius: 0.3rem;
+  width: 100%;
 }
 #email {
   font-size: 1.5rem;
   border: 1px solid rgb(165, 165, 165);
   outline: none;
   border-radius: 0.3rem;
+  width: 100%;
 }
 
 #message {
@@ -528,6 +530,7 @@ nav {
   border: 1px solid rgb(165, 165, 165);
   outline: none;
   border-radius: 0.3rem;
+  width: 100%;
 }
 .icons {
   font-size: 2rem;
@@ -566,10 +569,10 @@ nav {
   }
 
   #page2 {
-    height: 80vh;
+    height: 55vh;
   }
   #page2-lower {
-    width: 95vw;
+    width: 100%;
     margin: 1rem auto;
   }
   .overlay {
@@ -709,6 +712,7 @@ nav {
   #page5 > h3 {
     justify-content: start;
   }
+  
 }
 
 
@@ -785,6 +789,12 @@ nav {
         opacity: 0;
         transition: all 0.3s ;
     }
+
+
+    #page2-lower > h2{
+      height: 20%;
+      width: 80%;
+    }
 }
 
 
@@ -795,7 +805,8 @@ nav {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
+  background: #100F3E; 
 }
 
 ::-webkit-scrollbar-thumb {

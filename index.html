@@ -10,29 +10,13 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
         integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        const lenis = new Lenis()
-
-        lenis.on('scroll', (e) => {
-            console.log(e)
-        })
-
-        function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
-        }
-
-        requestAnimationFrame(raf);
-    </script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
 </head>
 
@@ -121,8 +105,8 @@
                 <h3>Fast Delivery</h3>
                 <h4>This is a Proper fast delivery web application.</h4>
                 <div>
-                    <a href="https://github.com/Chauhan2023/To-Do.git" target="_blank"><button>Video</button></a>
-                    <a href="https://drive.google.com/file/d/1TqfdwGbwMDj93TqrCmXd1f2Kcndy-X5K/view?usp=sharing"
+                    <a href="https://drive.google.com/file/d/179AAaKbWigVU22dSladJuWP3hijfHQjJ/view" target="_blank"><button>Video</button></a>
+                    <a href="https://github.com/Chauhan2023/Fast-food"
                         target="_blank"><button>Github</button></a>
                 </div>
 
@@ -144,8 +128,8 @@
                 <h3>To DO</h3>
                 <h4>It is proper todo React web application.</h4>
                 <div>
-                    <a href="https://github.com/Chauhan2023/Tic-Tac-Toe.git" target="_blank"><button>Website</button></a>
-                    <a href="https://drive.google.com/file/d/1b6oc4mqKqdkN2mImvrnHV6lQQk4Imp9j/view?usp=sharing"
+                  
+                    <a href="https://github.com/Chauhan2023/To-Do-react"
                         target="_blank"><button>Github</button></a>
                 </div>
 
@@ -207,11 +191,18 @@
         </div>
     </div>
 
-</div>
-
-
     <footer>All right reserved &copy; 2023</footer>
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+   
     <script>
         var typed = new Typed('#element', {
             strings: ['Student.', 'Web developer.'],
@@ -228,6 +219,7 @@
     </script>
     <script src="reponsive.js"></script>
     <script src="./gsap.js"></script>
+    <script src="./locomotive.js"></script>
 
 </body>
 

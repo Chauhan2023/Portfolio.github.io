@@ -7,14 +7,6 @@ burger.addEventListener('click',()=>{
 })
 
 
-const btn=document.querySelector('.click');
-
-btn.addEventListener('click',()=>{
-alert("foam is submitted successfully ")
-location.reload();
-
-})
-
 
 
 

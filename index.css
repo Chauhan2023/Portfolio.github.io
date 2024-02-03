@@ -1,10 +1,3 @@
-html{
-  scroll-behavior: smooth;
-  scroll-padding: 5rem;
-}
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +10,32 @@ html{
 body {
   margin: 0;
   padding: 0;
-  
   background-color: #100f3e;
   
+}
 
-  
+.main{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+::selection{
+  background-color: #932ff0a2;
+}
+
+.loader{
+  position: fixed;
+  z-index: 100000;
+  height: 100vh;
+  width: 100%;
+  font-size: 9vw;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
 }
 
 header{
@@ -243,8 +257,8 @@ nav {
   flex-direction: column;
 }
 
-.apple-vr > img {
-  height: 50%;
+.apple-vr > video {
+  height: 80%;
   width: 85%;
   object-fit: cover;
   border-radius: 1rem;
@@ -257,7 +271,7 @@ nav {
   margin-top: 1rem;
 }
 .apple-vr > h4 {
-  font-size: 0.9vw;
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: center;
   margin-top: 0.5rem;
@@ -279,6 +293,7 @@ nav {
   cursor: pointer;
 }
 
+
 /* cantainer2 */
 .todoimg {
   position: relative;
@@ -287,6 +302,14 @@ nav {
   height: 40%;
   width: 70%;
   object-fit: fill;
+  margin: auto;
+}
+
+.food > video {
+  height: 45%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 1rem;
   margin: auto;
 }
 
@@ -330,6 +353,15 @@ nav {
   margin: auto;
 }
 
+
+.bharat > video {
+  height: 70%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: auto;
+}
+
 .edu > h3 {
   font-weight: 600;
   text-align: center;
@@ -367,6 +399,14 @@ nav {
   height: 40%;
   width: 60%;
   object-fit: fill;
+  margin: auto;
+}
+
+.todoo > video {
+  height: 70%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 1rem;
   margin: auto;
 }
 
@@ -439,9 +479,10 @@ nav {
 }
 
 #page5 {
+  color: white;
   position: relative;
-  background-color: white;
-  height: 100vh;
+  background-color:#100F3E;
+  height: 100%;
   width: 100%;
 }
 #page5 > h1 {
@@ -464,17 +505,16 @@ nav {
 #page5-lower {
   display: flex;
   position: relative;
-  height: 60vh;
+  height: 20vh;
   width: 100%;
   margin-top: 2rem;
 }
 #page5-a {
   height: 100%;
-  width: 50%;
+  width: 100%;
 
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 #page5-a > div > h3 {
@@ -496,19 +536,18 @@ nav {
 }
 #page5-b {
   height: 100%;
-  width: 50%;
+  width: 100%;
   margin-right: 1rem;
 }
 #page5-b-lower {
   display: flex;
-  flex-direction: column;
   margin: 1rem 0px;
   justify-content: center;
   width: 100%;
 }
 #page5-b-lower > button {
   font-size: 1.3rem;
-  width: 70%;
+  
 }
 
 #name {
@@ -517,7 +556,7 @@ nav {
   font-size: 1.5rem;
   border-radius: 0.3rem;
   width: 100%;
-  margin-bottom: 0.2rem;
+  margin-bottom: .2rem;
 }
 #email {
   font-size: 1.5rem;
@@ -571,7 +610,7 @@ nav {
   }
 
   #page2 {
-    height: 75vh;
+    height: 55vh;
   }
   #page2-lower {
     width: 100%;
@@ -586,7 +625,7 @@ nav {
     height: 100%;
   }
   #page3 {
-    height: 230vh;
+    height: 400vh;
     margin: 0;
     justify-content: start;
   }
@@ -601,11 +640,20 @@ nav {
     align-items: center;
     width: 90%;
     height: 40%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
+  .container > video{
+    height: 37%;
+    border-radius: .2rem;
+  }
+
+  
   .apple-vr > h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+  .apple-vr > div{
+    flex-direction: row;
   }
 
   .todoimg {
@@ -627,12 +675,10 @@ nav {
     width: 45%;
   }
 
-  .apple-vr > div {
-    flex-direction: column;
-  }
+  
 
   .apple-vr > div > a>button {
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     margin-bottom: 0.2rem;
   }
 
@@ -690,8 +736,23 @@ nav {
   #page4-b > ul > li {
     font-size: 1rem;
   }
+ 
 
+  #page5>h1{
+    margin: auto;
+  }
+
+  #page5>h3{
+    margin: auto;
+  }
+
+  #page5-a{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #page5-lower {
+    
     flex-direction: column;
   }
   #page5-a > div > h3 {
@@ -702,19 +763,23 @@ nav {
   }
   #name {
     margin: 1rem 0px;
+    margin-bottom: .2rem;
   }
 
   #page5-b-lower {
     width: 170%;
   }
-  #page5 > h1 {
-    text-align: start;
-  }
 
-  #page5 > h3 {
-    justify-content: start;
+
+  .todo > div{
+    flex-direction: row;
   }
+  .container > div > a >button{
+  font-size: 5.5vw;
   
+}
+
+
 }
 
 
@@ -727,6 +792,11 @@ nav {
     #page1{
         height: 55vh;
     }
+
+    #page2{
+      height: 80vh;
+  }
+
     .left>a{
         display: flex;
         flex-direction: column;
@@ -797,30 +867,44 @@ nav {
       height: 35%;
       width: 95%;
     }
+
+    .edu > div{
+      flex-direction: row;
+    }
+
+    .tictac > div{
+      flex-direction: row;
+    }
+
+
+    #page3{
+      height: 170vh;
+    }
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  font-weight: 300;
 }
 
 
-
-
-::-webkit-scrollbar {
-  width: 10px; 
+body::-webkit-scrollbar {
+  width: 7px;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #f1f1f1;
-  background: #100F3E; 
 }
 
-::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 5px; 
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
-
-
-
-
-

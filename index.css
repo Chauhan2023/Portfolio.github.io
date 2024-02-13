@@ -39,18 +39,25 @@ body {
 }
 
 header{
+  width: 100%;
 
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10000;
   transition: all 0.2s;
   
 }
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
 nav {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  
   top: 0;
   height: 8vh;
   color: white;
@@ -87,9 +94,12 @@ nav {
 }
 
 .active{
-  color: aqua;
+  border-bottom: 2px solid #AF5AFF;
+  transition: all 0.6 linear;
 }
+
 #page1 {
+  padding-top: 5vw;
   position: relative;
   height: 100vh;
   width: 100%;

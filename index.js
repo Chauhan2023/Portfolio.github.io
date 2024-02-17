@@ -1,46 +1,32 @@
-window.addEventListener('scroll',()=>{
-    console.log(document.documentElement.scrollTop)
-})
-  window.addEventListener('scroll', () => {
-    const homeElement = document.querySelector('.home');
-    const aboutElement = document.querySelector('.about');
-    const projectElement = document.querySelector('.project');
-    const contactElement = document.querySelector('.contact');
-  
-    var scrollPosition = document.documentElement.scrollTop;
-  
-    if (scrollPosition >= 0 && scrollPosition <= 800) {
-      homeElement.classList.add('active');
-      aboutElement.classList.remove('active');
-      projectElement.classList.remove('active');
-      contactElement.classList.remove('active');
-    } else if (scrollPosition >= 801 && scrollPosition <= 1548) {
-      homeElement.classList.remove('active');
-      aboutElement.classList.add('active');
-      projectElement.classList.remove('active');
-      contactElement.classList.remove('active');
-    }
+locoScroll.on('scroll', (instance) => {
+  const homeElement = document.querySelector('.home');
+  const aboutElement = document.querySelector('.about');
+  const projectElement = document.querySelector('.project');
+  const contactElement = document.querySelector('.contact');
 
-    else if(scrollPosition >= 1549 && scrollPosition <= 2590){
+  const scrollPosition = instance.scroll.y;
+  console.log(scrollPosition)
 
-        homeElement.classList.remove('active');
-      aboutElement.classList.remove('active');
-      projectElement.classList.add('active');
-      contactElement.classList.remove('active');
-
-    }
-
-
-    else if(scrollPosition >= 2591){
-        homeElement.classList.remove('active');
-      aboutElement.classList.remove('active');
-      projectElement.classList.remove('active');
-      contactElement.classList.add('active');
-
-    }
-    // Add more conditions for other ss ections as needed
-  });
-  
-
-
-
+  if (scrollPosition >= 0 && scrollPosition <= 500) {
+    homeElement.classList.add('active');
+    aboutElement.classList.remove('active');
+    projectElement.classList.remove('active');
+    contactElement.classList.remove('active');
+  } else if (scrollPosition >= 501 && scrollPosition <= 1000) {
+    homeElement.classList.remove('active');
+    aboutElement.classList.add('active');
+    projectElement.classList.remove('active');
+    contactElement.classList.remove('active');
+  } else if (scrollPosition >= 1001 && scrollPosition <= 1600) {
+    homeElement.classList.remove('active');
+    aboutElement.classList.remove('active');
+    projectElement.classList.add('active');
+    contactElement.classList.remove('active');
+  } else if (scrollPosition >= 1800) {
+    homeElement.classList.remove('active');
+    aboutElement.classList.remove('active');
+    projectElement.classList.remove('active');
+    contactElement.classList.add('active');
+  }
+  // Add more conditions for other sections as needed
+});
